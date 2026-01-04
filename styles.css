@@ -6,7 +6,10 @@
     --panel: rgba(40, 40, 40, 0.6);
     --button: rgba(255, 255, 255, 0.15);
     --button-hover: rgba(255, 255, 255, 0.25);
+
+    /* Базовая тень оставлена как эталон */
     --shadow: 0 20px 40px rgba(0, 0, 0, 0.35);
+
     --radius: 16px;
     --transition: 0.2s ease;
 }
@@ -41,10 +44,27 @@ textarea:focus-visible {
     margin: 0 auto;
 }
 
+/* ---------- HEADER ---------- */
+
 header {
     position: sticky;
     top: 0;
     z-index: 10;
+}
+
+/* Glass как базовый примитив */
+.glass {
+    background: var(--panel);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    box-shadow: var(--shadow);
+    backdrop-filter: blur(18px);
+}
+
+/* ↓↓↓ КЛЮЧЕВАЯ КОРРЕКЦИЯ ↓↓↓ */
+/* Header должен быть менее «глубоким», чем контент */
+header.glass {
+    box-shadow: 0 10px 24px rgba(0, 0, 0, 0.28);
     backdrop-filter: blur(12px);
 }
 
@@ -72,35 +92,7 @@ header {
     color: var(--ink);
 }
 
-.glass {
-    background: var(--panel);
-    border: 1px solid var(--border);
-    border-radius: var(--radius);
-    box-shadow: var(--shadow);
-    backdrop-filter: blur(18px);
-}
-
-.hero {
-    padding: 8rem 0 4rem;
-}
-
-.hero-panel {
-    padding: 3rem;
-    display: grid;
-    gap: 1.5rem;
-}
-
-.lead {
-    font-size: 1.15rem;
-    line-height: 1.6;
-    color: var(--muted);
-}
-
-.cta {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
+/* ---------- BUTTONS ---------- */
 
 .btn {
     display: inline-flex;
@@ -122,10 +114,14 @@ header {
     transform: translateY(-2px);
 }
 
+/* ---------- LAYOUT ---------- */
+
 .section {
     padding: 4rem 0;
     display: grid;
-    gap: 2rem;
+
+    /* ↑ увеличено для компенсации blur + shadow */
+    gap: 2.5rem;
 }
 
 .panel {
@@ -134,71 +130,30 @@ header {
     gap: 1rem;
 }
 
-.section-header {
-    display: grid;
-    gap: 0.75rem;
+/* ↓↓↓ КЛЮЧЕВАЯ КОРРЕКЦИЯ ↓↓↓ */
+/* Контентные панели менее «тяжёлые», чем базовый glass */
+.panel.glass {
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.32);
+}
+
+/* Компенсация удаления hero-блока */
+.section > .panel:first-child {
+    margin-top: 2rem;
+}
+
+/* ---------- TEXT ---------- */
+
+.lead {
+    font-size: 1.15rem;
+    line-height: 1.6;
+    color: var(--muted);
 }
 
 .muted {
     color: var(--muted);
 }
 
-.grid {
-    display: grid;
-    gap: 1.5rem;
-    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-}
-
-.card {
-    padding: 2rem;
-    display: grid;
-    gap: 0.75rem;
-}
-
-.bullets {
-    margin: 0;
-    padding-left: 1.5rem;
-    display: grid;
-    gap: 0.75rem;
-}
-
-.form {
-    display: grid;
-    gap: 0.75rem;
-}
-
-.form input,
-.form textarea {
-    width: 100%;
-    padding: 0.75rem 1rem;
-    background: rgba(255, 255, 255, 0.08);
-    border: 1px solid var(--border);
-    border-radius: 12px;
-    color: var(--ink);
-}
-
-.form input::placeholder,
-.form textarea::placeholder {
-    color: var(--muted);
-}
-
-.contact-links {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-}
-
-.link {
-    color: var(--muted);
-    text-decoration: underline;
-    text-decoration-color: rgba(255, 255, 255, 0.4);
-    transition: color var(--transition);
-}
-
-.link:hover,
-.link:focus-visible {
-    color: var(--ink);
-}
+/* ---------- FOOTER ---------- */
 
 .foot {
     padding: 2rem 0;
@@ -218,15 +173,21 @@ header {
     gap: 1rem;
 }
 
+.link {
+    color: var(--muted);
+    text-decoration: underline;
+    text-decoration-color: rgba(255, 255, 255, 0.4);
+    transition: color var(--transition);
+}
+
+.link:hover,
+.link:focus-visible {
+    color: var(--ink);
+}
+
+/* ---------- RESPONSIVE ---------- */
+
 @media (max-width: 640px) {
-    .hero {
-        padding-top: 6rem;
-    }
-
-    .hero-panel {
-        padding: 2rem;
-    }
-
     .nav {
         flex-direction: column;
         align-items: flex-start;
@@ -234,5 +195,13 @@ header {
 
     .nav-link {
         margin-left: 0;
+    }
+
+    .section {
+        padding: 3rem 0;
+    }
+
+    .panel {
+        padding: 2rem;
     }
 }
