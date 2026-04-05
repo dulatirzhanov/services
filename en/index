@@ -95,14 +95,18 @@
 <body>
     <header class="glass">
         <div class="wrap nav">
-            <a class="brand" href="./">Dulat Irzhanov Consulting</a>
-<nav aria-label="Основная навигация">
-  <a class="nav-link" href="#approach">About the work</a>
-  <a class="nav-link" href="#next-step">Request a conversation</a>
-</nav>
-
-        </div>
-    </header>
+        <a class="brand" href="./">Dulat Irzhanov Consulting</a>
+        <nav aria-label="Выбор языка">
+            <a class="nav-link" href="../">RU</a>
+            <a class="nav-link" href="../kz/">KZ</a>
+            <a class="nav-link" style="opacity:0.4">EN</a>
+        </nav>
+        <nav aria-label="Основная навигация">
+            <a class="nav-link" href="#approach">О подходе</a>
+            <a class="nav-link" href="#next-step">Запросить разговор</a>
+        </nav>
+    </div>
+</header>
 <main class="wrap section">
 
   <section class="glass panel">
