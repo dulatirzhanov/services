@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Международная аккредитация школ CIS и IB, консалтинг — Дулат Иржанов</title>
+
+  <meta name="description" content="Помощь школам в международной аккредитации CIS и IB: аудит готовности, внутренняя система качества, обучение команд, аналитика данных. Казахстан и страны СНГ.">
+
+  <link rel="canonical" href="https://dulatedu.com/services/">
+
+  <meta name="robots" content="index,follow">
+  <meta name="language" content="ru">
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://dulatedu.com/services/">
+  <meta property="og:title" content="Международная аккредитация школ CIS и IB — консалтинг">
+  <meta property="og:description" content="Аудит готовности, выстраивание системы качества, подготовка к визитам, аналитика. Казахстан и СНГ.">
+  <meta property="og:image" content="https://dulatedu.com/assets/cover-services.jpg">
+
+  <!-- Twitter -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Международная аккредитация школ CIS и IB — консалтинг">
+  <meta name="twitter:description" content="Аудит готовности, система качества, обучение команд. Казахстан и СНГ.">
+  <meta name="twitter:image" content="https://dulatedu.com/assets/cover-services.jpg">
+
+  <!-- Favicon -->
+  <link rel="icon" href="https://dulatedu.com/assets/favicon.svg" type="image/svg+xml">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="./styles.css">
+
+  <!-- GA4 -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-P430YKCERB"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-P430YKCERB', { 'anonymize_ip': true });
+  </script>
+
+  <!-- Структурированные данные: Organization + Service -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "Dulat Irzhanov Consulting",
+    "url": "https://dulatedu.com/services/",
+    "logo": "https://dulatedu.com/assets/logo.png",
+    "sameAs": [
+      "https://www.linkedin.com/in/dulat-irzhanov/",
+      "https://dulatedu.com/"
+    ]
+  }
+  </script>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "serviceType": "Международная аккредитация школ CIS и IB",
+    "provider": { "@type": "Organization", "name": "Dulat Irzhanov Consulting" },
+    "areaServed": ["KZ", "RU", "UZ", "KG", "AZ", "BY"],
+    "availableChannel": { "@type": "ServiceChannel", "serviceLocation": { "@type": "Place", "address": { "@type": "PostalAddress", "addressCountry": "KZ", "addressLocality": "Астана" } } },
+    "url": "https://dulatedu.com/services/"
+  }
+  </script>
+
+  <!-- FAQ для расширенного сниппета -->
+  <script type="application/ld+json">
+  {
+    "@context":"https://schema.org",
+    "@type":"FAQPage",
+    "mainEntity":[
+      {
+        "@type":"Question",
+        "name":"Что дает международная аккредитация школы CIS?",
+        "acceptedAnswer":{"@type":"Answer","text":"Подтверждает соответствие международным стандартам качества, усиливает внутренние процессы и повышает доверие родителей и партнеров."}
+      },
+      {
+        "@type":"Question",
+        "name":"Как проходит подготовка к аккредитации IB?",
+        "acceptedAnswer":{"@type":"Answer","text":"Проводится аудит готовности, формируется дорожная карта, обучаются команды, выстраивается система данных и доказательств по стандартам IB."}
+      },
+      {
+        "@type":"Question",
+        "name":"Вы работаете со школами в Казахстане и СНГ?",
+        "acceptedAnswer":{"@type":"Answer","text":"Да, работа ведется с школами Казахстана и стран СНГ в дистанционном и очном форматах."}
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+    <header class="glass">
+        <div class="wrap nav">
+            <a class="brand" href="./">Dulat Irzhanov Consulting</a>
+<nav aria-label="Основная навигация">
+  <a class="nav-link" href="#approach">About the work</a>
+  <a class="nav-link" href="#next-step">Request a conversation</a>
+</nav>
+
+        </div>
+    </header>
+<main class="wrap section">
+
+  <section class="glass panel">
+    <h1>About the work</h1>
+    <p>
+      I work with school leaders at the point where a decision is already being discussed and the cost of error is becoming institutional.
+    </p>
+    <p>
+      It usually looks like this: changes have been launched but the system is not responding. The team is working but something important remains unspoken. Accreditation is underway but the internal doubt does not go away.
+    </p>
+    <p>
+      In these situations there is usually enough information. What is missing is a precise name for what is happening. That is where the conversation begins.
+    </p>
+
+  </section>
+
+  <section class="glass panel">
+    <h2>How I work</h2>
+    <p>
+      I do not offer ready-made solutions and do not manage projects end to end. The work begins with one conversation. Sometimes that is enough.
+    </p>
+    <p>
+      If you need a list of steps, tools, or confirmation of a decision already made, this is a different kind of work.
+    </p>
+    
+  </section>
+
+  <section id="next-step" class="glass panel">
+  <h2>Request a conversation</h2>
+
+    <p>
+      If this sounds like your situation, reach out.
+    </p>
+
+    <a class="btn" href="https://go.dulatedu.com/uD3j" target="_blank">
+      Request a conversation
+    </a>
+  </section>
+
+</main>
+  
+    <footer class="foot">
+        <div class="wrap foot-wrap">
+            <p>© 2025 Dulat Irzhanov Consulting</p>
+            <nav aria-label="Ссылки в подвале">
+                <a class="link" href="https://dulatedu.com/" rel="noopener noreferrer">dulatedu.com</a>
+                <a class="link" href="https://www.linkedin.com/in/dulat-irzhanov/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </nav>
+        </div>
+    </footer>
+    <script src="./script.js"></script>
+</body>
+</html>
